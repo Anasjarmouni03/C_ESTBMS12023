@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+//Exercise 02 : Amstrong Numbers
+
+void main ()
+{
+    int i , k ; Copie , S , Rest ; 
+    printf("Affichage des nombre d'AMSTRONG > 100 \n");
+    i = 153 ; k = 0 ;
+    while (k != 4) 
+    {
+        Copie = i ; S = 0 ; 
+        while (Copie != 0)
+        {
+            Rest = Copie % 10 ; // R1 = 3 // R2 = 5 // R3 = 1
+            S = S + Rest * Rest * Rest ;  // S1 = 0 + 3^3 // S2 = 3^3 + 5^3 // S3 = 3^3 + 5^3 + 1^3
+            Copie = Copie / 10 ; // Copie = 15 // Copie = 1 
+        }
+        if ( i == S )
+        {
+            printf("%d est un nombre damstrong\n",i);
+            k ++ ; // K = K + 1  ; K = 1
+        }
+    i ++ ;    
+    }
+}
