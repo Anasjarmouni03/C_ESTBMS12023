@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+//Exercise 03 : Une suite
+
+void main()
+{
+    int i , n , Un , Ub ;
+
+    printf("Enter le Nieme Valeur \n");
+    scanf("%d",&n);
+    Ub = 1 ;
+    
+    for(i=1 ; i <= n ; i++)
+    {
+        if( i % 2 == 0 )
+        {
+            Un = 2 * Ub ;
+            Ub = Un ;
+        }
+        if ( i % 2 != 0)
+        {
+            Un = 2 * Ub + 1 ;
+            Ub = Un ;
+        }
+    }
+    printf("Un = %d" ,Un);
+}
