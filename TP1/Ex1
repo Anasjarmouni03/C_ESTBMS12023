@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+//Exercise 04 : Equation 1ere degree
+
+void main()
+{
+    int a , b ;
+    float x ;
+
+    printf("Entrer a et b \n");
+    scanf("%d%d",&a ,&b);
+
+    if ( a != 0 )
+    {
+        x = -b / a ;
+        printf("La solution cest : %f\n",x);
+    }
+    else if ( b == 0 )
+    {
+        printf("La solution C'est : R \n");
+    }
+    else
+    {
+        printf("La solution C'est : Ensemble Vide \n");
+    }
+}
