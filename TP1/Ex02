@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+//Exercise 05 : Une autre suite 
+
+void main()
+{
+    float A = 1 , B , a ; 
+    printf("Entrer un reel \n");
+    scanf("%f",&a);
+
+    do 
+    {
+        B=A; 
+        A = 0.5 * (B + a/B) ;
+    }while (fabs(A-B)>=0.001) ;
+
+    printf("Le racine carre de %.2f C'est : %.2f",a,A);
+}
+//Exercise 06 : eule
